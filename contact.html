@@ -6,8 +6,7 @@
         <meta name="Description" content="Project of website of simple coffee shop using basic HTML">
         <title>BCP Contacts</title>
         <link rel="icon" href="logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -15,37 +14,55 @@
             <h1>Contact us</h1>
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/#about">About <abbr title="The Bro's Coffee Point"> BCP</abbr></a>
-                    </li>
-                    <li>
-                        <a href="/#menu">Our Menu</a>
-                    </li>
-                    <li>
-                        <a href="hours.html">Working Hours</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/#about">About <abbr title="The Bro's Coffee Point">BCP</abbr></a></li>
+                    <li><a href="/#menu">Our Menu</a></li>
+                    <li><a href="hours.html">Working Hours</a></li>
                 </ul>
             </nav>
-
             <figure>
-             <img src="c.png" alt="Snacks" title="I love Snacks" width="400" height="267">
-             <figcaption>Delicious Snacks</figcaption>
+                <img src="c.png" alt="Snacks" title="I love Snacks" width="400" height="267">
+                <figcaption>Delicious Snacks</figcaption>
             </figure>
         </header>
-        <hr>
 
         <main>
+            <h2>Our Contact</h2>
 
+            <section class="contact-form">
+                <fieldset>
+                    <legend>Personal Info</legend>
+
+                    <p>
+                        <label for="YourName">Your name:</label>
+                        <input type="text" name="YourName" id="firstname" placeholder="Xyz" autocomplete="on" required autofocus>
+                    </p>
+    
+                    <p>
+                        <label for="Email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="xxx@gmail.com" required>
+                    </p>
+    
+                    <p>
+                        <label for="YourMessage">Your Message:</label>
+                        <textarea name="YourMessage" id="YourMessage" placeholder="Type your message here" required></textarea>
+                    </p>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </section>
+
+            <h3>Our Address</h3>
+            <p>Kestopur, Kol - 102</p>
+            <p>Phone: 6207-0754-52</p>
         </main>
 
-        <hr>
-
         <footer>
-            <p>Copyright &copy; The Bro's Coffee Point</p>
+            <p><a href="#">Back to top</a></p>
+            <p>&copy; The Bro's Coffee Point</p>
         </footer>
     </body>
-
 </html>
